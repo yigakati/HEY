@@ -1,0 +1,17 @@
+name: Billing Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "GitHub Actions is working"
+
+      - name: Show Runner Info
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+          echo "Actor: $GITHUB_ACTOR"
+          echo "Repository: $GITHUB_REPOSITORY"
